@@ -14,6 +14,7 @@
         <!-- logo -->
 
         <!-- title -->
+        <h1>CatGPT</h1>
     </header>
 
 
@@ -36,19 +37,19 @@
         <!-- input area -->
         <section id="input-area">
 
-            <form>
+            <form id="input-form">
                 <div class="input-box">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter text here...">
+                        <input type="text" placeholder="Enter text here..." id="user-query-field">
                     </div>
 
-                    <div class="send-btn">
-                        <button type="submit" class="circle-btn">></button>
+                    <div class="send-btn-div">
+                        <button type="submit" class="circle-btn" id="send-btn">></button>
                     </div>
                 </div>
 
-                <div class="clear-btn">
-                    <button type="submit" class="circle-btn">[]</button>
+                <div class="clear-btn-div">
+                    <button type="clear" class="circle-btn" id="clear-btn">[]</button>
                 </div>
             </form>
 
