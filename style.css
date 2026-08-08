@@ -7,3 +7,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ================================================ HEADER */
+header {
+    height: 8rem;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+
+
+/* ================================================ MAIN */
+main {
+    width: 80%;
+    flex-grow: 1;
+    background-color: crimson;
+    margin: 0 auto;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main #chat-area {
+    width: 100%;
+    flex-grow: 1;
+    background-color: cornflowerblue;
+}
+
+main #input-area {
+    width: 100%;
+    height: 5rem;
+    background-color: coral;
+}
+
+
+
+/* ================================================ FOOTER */
+footer {
+    height: 2rem;
+    width: 100%;
+    background-color: darkcyan;
+}
