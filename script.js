@@ -14,9 +14,10 @@ inputForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
     displayQuery()
-    createReplyContent()
-    // displayReplay()
+    // createReplyContent()
+    displayReply()
 })
+
 
 function displayQuery () {
     let userQuery = userQueryField.value
@@ -38,7 +39,18 @@ function createReplyContent () {
     let randomNum = Math.floor(Math.random() * 60)
     console.log(randomNum)
 
-    let messageContent = "Meow" + ('meow' * randomNum) + "."
+    let messageContent = "Meow " + ('meow '.repeat(randomNum)) + "."
 
     return messageContent
+}
+
+
+function displayReply () {
+    const replyDiv = document.createElement('div')
+    replyDiv.classList.add('reply')
+
+    replyDiv.innerHTML = `<div class="profile">{}</div>
+    <div class="message">${createReplyContent()}</div>`
+
+    chatArea.appendChild(replyDiv)
 }
