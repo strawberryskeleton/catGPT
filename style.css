@@ -46,6 +46,7 @@ main #chat-area {
     flex-direction: column;
     padding: 1rem 1.5rem;
     gap: 1rem;
+    overflow-y: scroll;
 }
 
 #chat-area .query {
@@ -65,7 +66,7 @@ main #chat-area {
     width: fit-content;
     max-width: 65%;
     text-wrap: wrap;
-    min-height: 3rem;
+    height: fit-content;
     /* background-color: chartreuse; */
     align-self: flex-start;
     display: flex;

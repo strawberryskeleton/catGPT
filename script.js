@@ -14,7 +14,7 @@ inputForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
     displayQuery()
-    // processQuery()
+    createReplyContent()
     // displayReplay()
 })
 
@@ -31,4 +31,14 @@ function displayQuery () {
     chatArea.appendChild(queryDiv)
 
     userQueryField.value = ''
+}
+
+
+function createReplyContent () {
+    let randomNum = Math.floor(Math.random() * 60)
+    console.log(randomNum)
+
+    let messageContent = "Meow" + ('meow' * randomNum) + "."
+
+    return messageContent
 }
