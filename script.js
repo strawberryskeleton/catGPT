@@ -32,6 +32,8 @@ function displayQuery () {
     chatArea.appendChild(queryDiv)
 
     userQueryField.value = ''
+
+    chatArea.scrollTop = chatArea.scrollHeight;
 }
 
 
@@ -53,4 +55,6 @@ function displayReply () {
     <div class="message">${createReplyContent()}</div>`
 
     chatArea.appendChild(replyDiv)
+
+    chatArea.scrollTop = chatArea.scrollHeight;
 }

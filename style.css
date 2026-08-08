@@ -45,7 +45,7 @@ main #chat-area {
     display: flex;
     flex-direction: column;
     padding: 1rem 1.5rem;
-    gap: 1rem;
+    gap: 1.5rem;
     overflow-y: scroll;
 }
 
@@ -53,7 +53,7 @@ main #chat-area {
     /* display: block; */
     /* width: 60%; */
     width: fit-content;
-    max-width: 65%;
+    max-width: 55%;
     text-wrap: wrap;
     height: fit-content;
     padding: 1rem;
@@ -64,7 +64,7 @@ main #chat-area {
 
 #chat-area .reply {
     width: fit-content;
-    max-width: 65%;
+    max-width: 85%;
     text-wrap: wrap;
     height: fit-content;
     /* background-color: chartreuse; */
