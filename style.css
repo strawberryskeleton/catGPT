@@ -147,7 +147,8 @@ main #input-area form {
 
 
 /* ================================================ MAIN - SUGGEST BLOCKS */
-.hidden {
+main #suggest-blocks.hidden,
+main #chat-area.hidden {
     display: none;
 }
 

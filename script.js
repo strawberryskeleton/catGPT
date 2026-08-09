@@ -3,6 +3,8 @@ const chatArea = document.getElementById('chat-area')
 const inputForm = document.getElementById('input-form')
 const userQueryField = document.getElementById('user-query-field')
 const sendBtn = document.getElementById('send-btn')
+const suggestionCards = document.querySelectorAll('.card')
+const suggestBlocks = document.getElementById('suggest-blocks')
 
 // sendBtn.addEventListener('click', () => {
 //     addQuery()
@@ -21,7 +23,7 @@ inputForm.addEventListener('submit', (e) => {
 
 function displayQuery () {
     let userQuery = userQueryField.value
-    console.log(userQuery)
+    // console.log(userQuery)
 
     if (!userQuery) return
 
@@ -39,7 +41,7 @@ function displayQuery () {
 
 function createReplyContent () {
     let randomNum = Math.floor(Math.random() * 60)
-    console.log(randomNum)
+    // console.log(randomNum)
 
     let messageContent = "Meow " + ('meow '.repeat(randomNum)) + "."
 
@@ -58,3 +60,21 @@ function displayReply () {
 
     chatArea.scrollTop = chatArea.scrollHeight;
 }
+
+// console.log(suggestionCards)
+
+suggestionCards.forEach((card)=> {
+    // console.log('here')
+    card.addEventListener('click', () => {
+        // console.log('herer')
+        suggestBlocks.classList.add('hidden')
+        // chatArea.classList.remove('hidden')
+
+        let query = card.querySelector('p').innerText
+        // console.log(query)
+
+        userQueryField.value = query
+        displayQuery()
+        displayReply()
+    })
+})
