@@ -36,6 +36,7 @@ main {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
 }
 
 main #chat-area {
@@ -145,6 +146,58 @@ main #input-area form {
 }
 
 
+/* ================================================ MAIN - SUGGEST BLOCKS */
+.hidden {
+    display: none;
+}
+
+main #suggest-blocks {
+    border: 2px solid blue;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 4rem);
+    /* display: inline-block; */
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 5rem;
+}
+
+#suggest-blocks .title {
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+
+#suggest-blocks .cards {
+    width: 100%;
+    /* background-color: darksalmon; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+#suggest-blocks .cards .card {
+    height: 12rem;
+    padding: 2rem;
+    background-color: cadetblue;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#suggest-blocks .cards .card .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
 
 /* ================================================ FOOTER */
 footer {
