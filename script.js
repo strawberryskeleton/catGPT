@@ -56,7 +56,7 @@ function displayReply () {
     const replyDiv = document.createElement('div')
     replyDiv.classList.add('reply')
 
-    replyDiv.innerHTML = `<div class="profile">{}</div>
+    replyDiv.innerHTML = `<div class="profile"><img src="./assets/logo_white.png" alt="logo"></div>
     <div class="message">${createReplyContent()}</div>`
 
     chatArea.appendChild(replyDiv)
@@ -75,7 +75,7 @@ suggestionCards.forEach((card)=> {
 
         let query = card.querySelector('p').innerText
         // console.log(query)
-        
+
         userQueryField.value = query
 
         displayQuery()
