@@ -3,6 +3,7 @@ const chatArea = document.getElementById('chat-area')
 const inputForm = document.getElementById('input-form')
 const userQueryField = document.getElementById('user-query-field')
 const sendBtn = document.getElementById('send-btn')
+const clearBtn = document.getElementById('clear-btn')
 const suggestionCards = document.querySelectorAll('.card')
 const suggestBlocks = document.getElementById('suggest-blocks')
 
@@ -18,6 +19,11 @@ inputForm.addEventListener('submit', (e) => {
     displayQuery()
     // createReplyContent()
     displayReply()
+})
+
+clearBtn.addEventListener('click', () => {
+    userQueryField.value = ""
+    userQueryField.focus()
 })
 
 

@@ -1,4 +1,18 @@
 
+:root {
+    /* --main-green: #2daa80;
+    --text-white: #e4e4e4;
+    --main-dark: #10121e;
+    --main
+    --main-light: #c2c2c3; */
+    --black:  #021a1a;
+    --mint: #2FA98C;
+    --dark-green: #06302B;
+    --dark-dark-green: #032221;
+    --pistachio: #AACBC4;
+    --stone: #707D7D;
+    --white: #F1F7F6;
+}
 
 *,
 *::before,
@@ -21,7 +35,7 @@ body {
 
     background-repeat: repeat;
     background-position: 0 0;
-    background-color: #fff;
+    background-color: var(--white);
     background-blend-mode: difference;
     animation: bg-scrolling-reverse .92s infinite;
     animation-timing-function: linear;
@@ -41,7 +55,7 @@ body {
 header {
     height: 8rem;
     width: 100%;
-    background-color: transparent;
+    /* background-color: transparent; */
     /* backdrop-filter: blur(5px); */
     display: flex;
     align-items: center;
@@ -61,7 +75,7 @@ header .logo img {
 
 header h1 {
     font-size: 5.5rem;
-    color: #fff;
+    color: var(--white);
 }
 
 
@@ -70,7 +84,10 @@ header h1 {
 main {
     width: 80%;
     flex-grow: 1;
-    border: 2px solid crimson;
+    /* border: 2px solid var(--stone); */
+    background-color: var(--dark-dark-green-);
+    color: var(--white);
+    backdrop-filter: blur(1px);
     margin: 0 auto;
     border-radius: 1.5rem;
     display: flex;
@@ -82,7 +99,8 @@ main {
 main #chat-area {
     width: 100%;
     flex-grow: 1;
-    background-color: cornflowerblue;
+    /* background-color: #10121e42; */
+    /* backdrop-filter: blur(1px); */
     display: flex;
     flex-direction: column;
     padding: 1rem 1.5rem;
@@ -98,7 +116,8 @@ main #chat-area {
     text-wrap: wrap;
     height: fit-content;
     padding: 1rem;
-    background-color: aquamarine;
+    background-color: var(--dark-dark-green);
+    color: var(--white);
     align-self: flex-end;
     border-radius: 1rem;
 }
@@ -117,14 +136,15 @@ main #chat-area {
 }
 
 #chat-area .reply .profile {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     flex-shrink: 0;
-    background-color: crimson;
+    background-color: var(--dark-green);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.25rem;
 }
 
 #chat-area .reply .profile img {
@@ -135,7 +155,8 @@ main #chat-area {
 #chat-area .reply .message {
     padding: 1rem;
     padding-left: 1.5rem;
-    background-color: coral;
+    background-color: var(--dark-green);
+    color: var(--pistachio);
     border-radius: 1rem;
 }
 
@@ -145,7 +166,7 @@ main #chat-area {
 main #input-area form {
     width: 100%;
     height: 4rem;
-    background-color: darkorchid;
+    /* background-color: darkorchid; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -155,7 +176,7 @@ main #input-area form {
     display: flex;
     /* width: 95%; */
     flex-grow: 0.95;
-    background-color: aqua;
+    background-color: var(--dark-dark-green);
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -173,6 +194,7 @@ main #input-area form {
     outline: none;
     border: none;
     background-color: transparent;
+    color: var(--white);
     width: 100%;
     height: 100%;
     font-size: 1.1rem;
@@ -190,7 +212,8 @@ main #input-area form {
     height: 3rem;
     border-radius: 50%;
     align-items: center;
-    background-color: chocolate;
+    background-color: var(--mint);
+    color: var(--white);
     font-size: 1.4rem;
     display: flex;
     align-items: center;
@@ -207,7 +230,7 @@ main #chat-area.hidden {
 }
 
 main #suggest-blocks {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     position: absolute;
     width: 100%;
     height: calc(100% - 4rem);
@@ -225,6 +248,14 @@ main #suggest-blocks {
     font-size: 2.5rem;
 }
 
+#suggest-blocks .title h2 {
+    color: var(--mint);
+}
+
+#suggest-blocks .title h3 {
+    color: var(--white);
+}
+
 #suggest-blocks .cards {
     width: 100%;
     /* background-color: darksalmon; */
@@ -237,7 +268,8 @@ main #suggest-blocks {
 #suggest-blocks .cards .card {
     height: 12rem;
     padding: 2rem;
-    background-color: cadetblue;
+    background-color: var(--dark-green);
+    color: var(--pistachio);
     border-radius: 1rem;
     margin-top: 0.5rem;
     font-size: 1.2rem;
@@ -246,7 +278,7 @@ main #suggest-blocks {
 #suggest-blocks .cards .card .icon {
     width: 2.5rem;
     height: 2.5rem;
-    background-color: crimson;
+    background-color: var(--dark-dark-green);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -259,6 +291,5 @@ footer {
     height: 2rem;
     width: 100%;
     /* background-color: rgba(63, 63, 63, 0.257); */
-    color: #919191;
-    /* backdrop-filter: blur(1px); */
+    color: var(--stone);
 }
