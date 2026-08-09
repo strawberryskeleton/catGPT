@@ -143,10 +143,16 @@ main #input-area form {
     border-radius: 50%;
     align-items: center;
     background-color: chocolate;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /* ================================================ MAIN - SUGGEST BLOCKS */
+
+/* more specific req cuz otherise overidden by normal styles, can also use !imporant instead of this */
 main #suggest-blocks.hidden,
 main #chat-area.hidden {
     display: none;

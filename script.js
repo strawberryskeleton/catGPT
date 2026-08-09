@@ -22,6 +22,9 @@ inputForm.addEventListener('submit', (e) => {
 
 
 function displayQuery () {
+    suggestBlocks.classList.add('hidden')
+
+
     let userQuery = userQueryField.value
     // console.log(userQuery)
 
@@ -72,8 +75,9 @@ suggestionCards.forEach((card)=> {
 
         let query = card.querySelector('p').innerText
         // console.log(query)
-
+        
         userQueryField.value = query
+
         displayQuery()
         displayReply()
     })
