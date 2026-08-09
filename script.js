@@ -62,7 +62,7 @@ function displayReply () {
     const replyDiv = document.createElement('div')
     replyDiv.classList.add('reply')
 
-    replyDiv.innerHTML = `<div class="profile"><img src="./assets/logo_white.png" alt="logo"></div>
+    replyDiv.innerHTML = `<div class="profile"><img src="./assets/profile.jpeg" alt="logo"></div>
     <div class="message">${createReplyContent()}</div>`
 
     chatArea.appendChild(replyDiv)

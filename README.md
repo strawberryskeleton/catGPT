@@ -11,3 +11,8 @@ https://yoksel.github.io/url-encoder/
 https://codepen.io/kootoopas/pen/kGPoaB
 
 https://in.pinterest.com/pin/211174977142847/
+https://in.pinterest.com/pin/34058540927789208/
+https://in.pinterest.com/pin/24347654231917780/
+https://in.pinterest.com/pin/1117455726319390950/
+https://in.pinterest.com/pin/1196337403023665/
+https://in.pinterest.com/pin/751256781636320359/

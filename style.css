@@ -5,13 +5,19 @@
     --main-dark: #10121e;
     --main
     --main-light: #c2c2c3; */
-    --black:  #021a1a;
-    --mint: #2FA98C;
+    /*👉--mint: #2FA98C;
     --dark-green: #06302B;
     --dark-dark-green: #032221;
     --pistachio: #AACBC4;
-    --stone: #707D7D;
+    --stone: #707D7D;👈*/
+    --black:  #021a1a;
     --white: #F1F7F6;
+
+    --dark-blue: #132442;
+    --blue: #3551A4;
+    --mid-light-blue: #80A1F8;
+    --light-blue: #7bcbcd;
+    --neon: #D6E264;
 }
 
 *,
@@ -29,16 +35,20 @@ body {
     flex-direction: column;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuGxCC") repeat 0 0;
+    /*👉background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuGxCC") repeat 0 0;
 
-    /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M 50 0 L 0 0 0 50' fill='none' stroke='rgba(255,255,255,0.15)' stroke-width='1'/></svg>"); */
+    ➡ background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M 50 0 L 0 0 0 50' fill='none' stroke='rgba(255,255,255,0.15)' stroke-width='1'/></svg>"); ⬅
 
     background-repeat: repeat;
     background-position: 0 0;
     background-color: var(--white);
     background-blend-mode: difference;
     animation: bg-scrolling-reverse .92s infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear;👈*/
+
+    background: url('./assets/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -53,19 +63,22 @@ body {
 
 /* ================================================ HEADER */
 header {
-    height: 8rem;
+    height: 10rem;
     width: 100%;
-    /* background-color: transparent; */
+    /* background-color: blue; */
     /* backdrop-filter: blur(5px); */
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0 3rem;
+    padding: 0 4rem;
+    padding-top: 3rem;
 }
 
 header .logo {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 header .logo img {
@@ -74,8 +87,8 @@ header .logo img {
 }
 
 header h1 {
-    font-size: 5.5rem;
-    color: var(--white);
+    font-size: 5.75rem;
+    color: var(--neon);
 }
 
 
@@ -85,9 +98,9 @@ main {
     width: 80%;
     flex-grow: 1;
     /* border: 2px solid var(--stone); */
-    background-color: var(--dark-dark-green-);
+    background-color: var(--dark-blue);
     color: var(--white);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(8px);
     margin: 0 auto;
     border-radius: 1.5rem;
     display: flex;
@@ -116,7 +129,7 @@ main #chat-area {
     text-wrap: wrap;
     height: fit-content;
     padding: 1rem;
-    background-color: var(--dark-dark-green);
+    background-color: var(--blue);
     color: var(--white);
     align-self: flex-end;
     border-radius: 1rem;
@@ -140,22 +153,23 @@ main #chat-area {
     height: 3rem;
     border-radius: 50%;
     flex-shrink: 0;
-    background-color: var(--dark-green);
+    background-color: var(--light-blue);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.25rem;
+    /* padding: 0.25rem; */
+    overflow: hidden;
 }
 
 #chat-area .reply .profile img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
 }
 
 #chat-area .reply .message {
     padding: 1rem;
     padding-left: 1.5rem;
-    background-color: var(--dark-green);
+    background-color: var(--mid-light-blue);
     color: var(--pistachio);
     border-radius: 1rem;
 }
@@ -170,13 +184,14 @@ main #input-area form {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 #input-area .input-box {
     display: flex;
     /* width: 95%; */
     flex-grow: 0.95;
-    background-color: var(--dark-dark-green);
+    background-color: var(--light-blue);
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -194,10 +209,14 @@ main #input-area form {
     outline: none;
     border: none;
     background-color: transparent;
-    color: var(--white);
+    color: var(--blue);
     width: 100%;
     height: 100%;
     font-size: 1.1rem;
+}
+
+#input-area .input-box .input-field input::placeholder {
+    color: var(--neon);
 }
 
 #input-area .clear-btn-div {
@@ -212,8 +231,8 @@ main #input-area form {
     height: 3rem;
     border-radius: 50%;
     align-items: center;
-    background-color: var(--mint);
-    color: var(--white);
+    background-color: var(--blue);
+    color: var(--neon);
     font-size: 1.4rem;
     display: flex;
     align-items: center;
@@ -249,11 +268,11 @@ main #suggest-blocks {
 }
 
 #suggest-blocks .title h2 {
-    color: var(--mint);
+    color: var(--light-blue);
 }
 
 #suggest-blocks .title h3 {
-    color: var(--white);
+    color: var(--mid-light-blue);
 }
 
 #suggest-blocks .cards {
@@ -268,7 +287,7 @@ main #suggest-blocks {
 #suggest-blocks .cards .card {
     height: 12rem;
     padding: 2rem;
-    background-color: var(--dark-green);
+    background-color: var(--blue);
     color: var(--pistachio);
     border-radius: 1rem;
     margin-top: 0.5rem;
@@ -278,7 +297,8 @@ main #suggest-blocks {
 #suggest-blocks .cards .card .icon {
     width: 2.5rem;
     height: 2.5rem;
-    background-color: var(--dark-dark-green);
+    background-color: var(--neon);
+    color: var(--mid-light-blue);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -291,5 +311,5 @@ footer {
     height: 2rem;
     width: 100%;
     /* background-color: rgba(63, 63, 63, 0.257); */
-    color: var(--stone);
+    color: var(--neon);
 }
