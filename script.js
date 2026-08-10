@@ -16,6 +16,11 @@ const suggestBlocks = document.getElementById('suggest-blocks')
 inputForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
+    if (!userQueryField.value.trim()) {
+        console.log("nothing in input field")
+        return
+    }
+
     displayQuery()
     // createReplyContent()
     displayReply()
@@ -34,7 +39,10 @@ function displayQuery () {
     let userQuery = userQueryField.value
     // console.log(userQuery)
 
-    if (!userQuery) return
+    if (userQuery == "") {
+        // console.log("nothing to show")
+        return
+    }
 
     const queryDiv = document.createElement('div')
     queryDiv.classList.add('query')
