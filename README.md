@@ -3,11 +3,16 @@ meow meow
 
 ai platforrm but the ai is a cat so it only meows back
 
+> catGPT is llm for cats (their humans can also use), but it only replies for cats, so if you don't understand it's because you are not a cat. you may ask your cat to read it for you if you like.
+
+LIVE DEMO: [https://strawberryskeleton.github.io/catGPT/](https://strawberryskeleton.github.io/catGPT/)
+
 ## Features
 - ai llm like layout (took inspo from a lot of YT videos and genAI platofrms like chatgpts, gemini, etc.)
-- an aesthetic ui theme (shoutout to pintrest for colors, images and bg)
+- space cat theme ui (shoutout to pintrest for colors, images and bg)
 - random number of meows back on every query
 - query suggestions page (like present in most ai platfroms)
+- kinda responsive too (mostly because i didn't hard code any values in px)
 
 
 ## Project Screenshots
