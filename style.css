@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     /* --main-green: #2daa80;
@@ -33,7 +34,7 @@ body {
     /* background-color: #fff; */
     display: flex;
     flex-direction: column;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Exo", sans-serif;
 
     /*👉background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuGxCC") repeat 0 0;
 
@@ -89,6 +90,7 @@ header .logo img {
 header h1 {
     font-size: 5.75rem;
     color: var(--neon);
+    letter-spacing: 2px;
 }
 
 
@@ -286,7 +288,7 @@ main #suggest-blocks {
 
 #suggest-blocks .cards .card {
     height: 12rem;
-    padding: 2rem;
+    padding: 1.75rem 2rem;
     background-color: var(--blue);
     color: var(--pistachio);
     border-radius: 1rem;
@@ -295,8 +297,8 @@ main #suggest-blocks {
 }
 
 #suggest-blocks .cards .card .icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
     background-color: var(--neon);
     color: var(--mid-light-blue);
     border-radius: 50%;
@@ -304,6 +306,7 @@ main #suggest-blocks {
     justify-content: center;
     align-items: center;
     margin-bottom: 0.75rem;
+    font-size: 1.75rem;
 }
 
 /* ================================================ FOOTER */
