@@ -121,6 +121,7 @@ main #chat-area {
     padding: 1rem 1.5rem;
     gap: 1.5rem;
     overflow-y: scroll;
+    scrollbar-color: var(--light-blue) transparent;
 }
 
 #chat-area .query {
@@ -221,6 +222,13 @@ main #input-area form {
     color: var(--neon);
 }
 
+#input-area .input-box .input-field input:focus,
+#input-area .input-box .input-field input:active {
+    background: none;
+    border: none;
+    outline: none;
+}
+
 #input-area .clear-btn-div {
     width: 4rem;
 }
@@ -239,6 +247,12 @@ main #input-area form {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease-in;
+}
+
+.circle-btn:hover {
+    background-color: var(--neon);
+    color: var(--blue);
 }
 
 
@@ -294,6 +308,17 @@ main #suggest-blocks {
     border-radius: 1rem;
     margin-top: 0.5rem;
     font-size: 1.2rem;
+    transition: all 0.2s ease-in;
+}
+
+#suggest-blocks .cards .card:hover {
+    background-color: var(--mid-light-blue);
+    color: var(--neon);
+}
+
+#suggest-blocks .cards .card:hover .icon {
+    background-color: var(--blue);
+    color: var(--neon);
 }
 
 #suggest-blocks .cards .card .icon {
@@ -307,6 +332,7 @@ main #suggest-blocks {
     align-items: center;
     margin-bottom: 0.75rem;
     font-size: 1.75rem;
+    transition: all 0.2s ease-in;
 }
 
 /* ================================================ FOOTER */
@@ -324,5 +350,10 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: var(--neon);   
+    color: var(--neon);
+    transition: all 0.2s ease-in;
+}
+
+footer a:hover {
+    color: var(--light-blue);
 }
