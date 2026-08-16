@@ -41,6 +41,12 @@ LIVE DEMO: [https://strawberryskeleton.github.io/catGPT/](https://strawberryskel
 12. added some polish (css hover effects, layout adjustments, small bug fixing, etc.) 
 
 
+## Local Development
+1. clone this github repo to your device
+2. run (by double clicking) `index.html` from the root/ directory
+   > all assets needed are included in the repo, and running the project locally does not need any further changes
+
+
 ## Credits
 - made by me
 - background remover: [Photoroom BG Remover](https://www.photoroom.com/tools/background-remover)
